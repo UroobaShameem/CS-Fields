@@ -1,6 +1,13 @@
-        body {background-color: #afb5c4;}
+        body {background-color: #b0bee2;}
 
-        #main {width: 1214px; height: 800px; margin-left: auto; margin-right: auto;}
+        .intro {width:auto; height: auto; display: flex;}
+
+        .intro p {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px; text-align: center;}
+
+        h1 {text-align: center; font-size: 45px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-decoration-line: underline; text-decoration-style: double; text-decoration-thickness: 3px; color: #041861;}
+
+        #main {width: auto; height: auto; display: flex; justify-content: space-around;}
 
         .cont {height: 800px; width: 400px; display:inline-block;}
 
@@ -10,12 +17,14 @@
 
         .text {height: 300px; width: 400px;}
 
-        h1 {text-align: center; font-size: 45px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            text-decoration-line: underline; text-decoration-style: double; text-decoration-thickness: 3px; color: #041861;}
+       
 
         h2 {text-align: center; font-size: 32px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             color: #041861;}
 
-        #intro{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px; text-align: justify;}
-
         p {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 19px; text-align: center;}
+
+        @media (max-width: 768px) {
+            .intro {margin: 10px;}
+            #main {flex-direction: column; align-items: center;}
+        }
